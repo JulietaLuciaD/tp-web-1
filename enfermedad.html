@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header class="contenedorheader">
+        <div clas="logo">
+            <img src="img/local_hospital-24px.svg" alt="">
+            <!--logo de la pagina-->
+        </div>
+        <div class="buscador">
+            <!--html del buscador-->
+            <form action="#" method="post">
+                <datalist id="buscador">/!--no se como dejar una opcion marcada por defecto--/
+                    <option value="sida">
+                    <option value="Resdriado común">
+                    <option value="Fiebre hemorrágica por el virus del Ébola">
+                    <option value="Herpes genital">
+                    <option value="Influenza">
+                    <option value="Sarampión">
+                    <option value="Varicela y herpes zóster (culebrilla)">
+                </datalist>
+                <input type="text" name="enfermedades" list="buscador" placeholder="Busque por enfermedades">
+                <input type="submit" value="buscar">
+            </form>
+            <!--un datalist para busqueda-->
+        </div>
+        <div class="redessociales">
+            <!--La idea sería colocar iconos para linkear con las redes sociales-->
+            <p>Redes Sociales</p>
+            <img src="" alt="">
+            <!--icono de red social-->
+            <img src="" alt="">
+            <!--icono de red social-->
+            <img src="" alt="">
+            <!--icono de red social-->
+        </div>
+    </header>
+    <!--html del menu-->
+    <nav class="menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ENFERMEDADES</a></li>
+            <li><a href="#">HOSPITALES</a></li>
+            <li><a href="#">VACUNACI&Oacute;N</a></li>
+            <li><a href="#">CONTACTO</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <h2>COVID- 19</h2>
+        <br>
+        <div class="containerCoronavirus">
+            <div class="containerImgCoronavirus">
+                <img class="imagenCoronavirus" src="img/covid19.jpg">
+            </div>
+            <div class="containerDescripcion">
+                <p class="descripcionCoronavirus">Los coronavirus (CoV) son una amplia familia de virus que pueden
+                    causar diversas afecciones, desde el
+                    resfriado común hasta enfermedades más graves, como ocurre con el coronavirus causante del síndrome
+                    respiratorio de Oriente Medio (MERS-CoV) y el que ocasiona el síndrome respiratorio agudo severo
+                    (SRAS-CoV). Un nuevo coronavirus es una nueva cepa de coronavirus que no se había encontrado antes
+                    en el
+                    ser humano.
+                    Los coronavirus se pueden contagiar de los animales a las personas (transmisión zoonótica). De
+                    acuerdo
+                    con estudios exhaustivos al respecto, sabemos que el SRAS-CoV se transmitió de la civeta al ser
+                    humano y
+                    que se ha producido transmisión del MERS-CoV del dromedario al ser humano. Además, se sabe que hay
+                    otros
+                    coronavirus circulando entre animales, que todavía no han infectado al ser humano.
+                    Esas infecciones suelen cursar con fiebre y síntomas respiratorios (tos y disnea o dificultad para
+                    respirar). En los casos más graves, pueden causar neumonía, síndrome respiratorio agudo severo,
+                    insuficiencia renal e, incluso, la muerte.
+                    Las recomendaciones habituales para no propagar la infección son la buena higiene de manos y
+                    respiratoria (cubrirse la boca y la nariz al toser y estornudar) y la cocción completa de la carne y
+                    los
+                    huevos. Asimismo, se debe evitar el contacto estrecho con cualquier persona que presente signos de
+                    afección respiratoria, como tos o estornudos.
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h3>Formulario de detección (test) de Coronavirus (COVID19)</h3>
+        <br>
+        <div class="containerTest">
+            <div class="containerDescripcionTest">
+                <p class="descripcionTest">“Hola usuario! Si tienes síntomas de XXXX o has estado en contacto con una persona afectada deberías
+                    hacer un control y seguimiento diario de tus síntomas.
+                    Esta aplicación te permitirá hacer un seguimiento de la evolución de los síntomas y te dará las
+                    indicaciones y consejos a seguir en cada caso. El uso de este servicio supone la aceptación de los
+                    términos y la política de privacidad descritos en 'Ver las condiciones y políticas'”
+                </p>
+                <br>
+                <img class="imagenSintomasCovid" src="img/sintomascorona470.jpg">
+
+            </div>
+            <div class="containerFormularioTest">
+                <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre">
+                    <br><br>
+                    <label for="correo">Email</label>
+                    <input type="email" id="correo" name="correo" required placeholder="ingrese su email">
+                    <br><br>
+                    <label for="provincia">Provincia</label>
+                    <select name="provincia" id="provincia">
+                       <option value="BA">Buenos Aires</option>
+                       <option value="CABA">Ciudad de Buenos Aires</option>
+                       <option value="CO" selected>Córdoba</option>
+                    </select>
+                    <br><br>
+                    <label for="consulta">Consulta</label><br>
+                    <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
+                    <br><br>
+    
+                    <label for="">Indique su sexo:</label><br>
+                    Varón <input type="radio" name="sexo" id="varon"> Mujer <input type="radio" name="sexo" id="mujer" checked> Otro <input type="radio" name="sexo" id="otro">
+                    <br><br>
+                    <label for="">Términos y condiciones</label>
+                    <input type="checkbox" name="terminos" id="terminos" checked>
+                    <br><br>
+                    
+                    <input type="hidden" name="oculto" id="oculto" value="10">
+                    
+                    <input type="password" name="pass" id="pass">
+                    
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="borrar">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="contenedorfooter">
+        <div class="item6">
+            <p>Datos del alumno</p>
+        </div>
+        <div class="item7">
+            <p>Menu inferior:</p>
+            <p>
+                <a href="">Enfermedades</a>
+                <a href="">Vacunas</a>
+                <a href="">Hospitales</a>
+                <a href="">Contacto</a>
+            </p>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
