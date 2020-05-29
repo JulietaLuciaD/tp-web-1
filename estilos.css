@@ -1,0 +1,226 @@
+/*Estilos  genericos*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Estilos de etiquetas semanticas */
+header{
+    background-image: url(../img/full-bloom.png);
+}
+p{
+    font-family: arial, sans-serif;
+    font-size:20px;
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+section{
+    padding: 20px;
+}
+h2{
+   padding: 30px;
+   background-color: aliceblue;
+   font-size:2em;
+   text-align: center;
+   font-weight: normal;
+}
+article{
+    padding: 100px;
+    text-align: center;
+    background: #1bc1ea;
+    margin-bottom: 20px;
+    height: 30px;/*Le tuve que poner el mismo alto a todo porque sino la caja de mapa de hospitales que quedaba mas alto porque por defoult tienen el alto del contenido */
+    box-sizing: border-box
+    
+}
+footer{
+    padding: 60px;
+    margin:5px;
+    border-radius: 15px;
+}
+
+h3{
+    padding: 9px;
+    background-color: aliceblue;
+    font-size: x-large;;
+    text-align: center;
+    font-weight: normal;
+ }
+ h4{
+    padding: 30px;
+    font-size: x-large;
+    text-align: center;
+    font-weight: normal;
+ }
+
+ h1 {
+     text-align: center;
+ }
+
+
+/*Estilos de clase*/
+.estilosheader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /*para centrar los items del contenedor*/
+}
+.estilosheader img{
+   width: calc(50% - 10px);
+   box-sizing: border-box;
+   padding: 20px;
+    
+}
+.estilosheader form{
+    width: 40%;
+    box-sizing: border-box;
+    padding: 50px;
+    margin: 5px;
+}
+
+.contenedorslaider{
+   display:block;
+   height: 200px; /*Aca tuve que darle alto, pero no es lo correcto me parece*/
+   text-align: center; 
+}
+
+/*Linea con tres columnas que informa Enfermedades, Hospitales y Vacunas*/
+/*Cuando reduzco la pantalla se ve que  las tres columnas sobrepasan los limites del main*/
+.contenedor{
+   display: flex;
+   flex-direction: row; /* no es necesario ponerlo es la opcion por de defoult*/
+   justify-content:space-around;
+   align-items:flex-start;
+   flex-wrap: nowrap; /*redestribuye los elementos para que entren en una sola linea tmb es por defoult*/
+}
+.contenedorllamado{
+    display: flex;
+    justify-content:space-around;
+    background-color:#ea1b1b;
+
+}
+
+.contenedorfooter{
+    display: flex;
+    justify-content: space-between;
+    background-color:#ea1b1b;
+    margin-top: 10px;
+
+    
+}
+/*menu del index, que se replicara en todas las paginas*/
+.menu{
+     background-color: #ea1b1b;
+     border-radius: 15px;
+     margin:5px;
+}
+.menu ul{ /* el ul funcionaria como contenedor*/
+    display: flex;
+    justify-content: center;
+}
+.menu li{
+    list-style: none; /* pasa sacar los puntos de los li*/
+}
+.menu a{
+    text-decoration: none; /*saca el subrayado*/
+    color:#fff;
+    padding: 20px;
+    display: block; /*hace que los a se comporten como un bloque, para que se les aplique el padding*/
+}
+.menu a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.imagenCoronavirus {
+    height: 100%;
+    width: 100%;
+}
+
+.containerCoronavirus {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerImgCoronavirus {
+    flex: 0.45;
+}
+
+.containerDescripcion{
+    flex: 0.5;
+}
+
+.descripcionCoronavirus{   
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.containerTest{
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerDescripcionTest{
+    display: flex;
+    flex-direction: row;
+    flex:0.5;
+}
+
+.descripcionTest{
+    font-family: arial, sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: justify;
+}
+.containerFormularioTest{
+    display:flex;
+    flex: 0.45;
+}
+
+.itemsFormulario {
+    font-family: arial, sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.contenedorSintomasHabituales{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.descripcionSintoma {
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: medium;
+}
+
+.imagenSintoma{
+    height: 130px;
+    width: 130px;
+}
+
+.descripcionSintomaFinal{
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: large;
+
+}
+
+.subtitulos{
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: xx-large;
+}
+
+.contenedorDescripcionFinalSintomas{
+    border-color: black;
+    border: outset;
+}
+.imagenPrevencionCovid{
+    height: 400px;
+    justify-content: center;
+}
+/*Estilos de id*/
